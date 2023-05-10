@@ -5027,6 +5027,14 @@
                 "children": [],
                 "isExternal": false,
                 "disableCollapsible": false
+              },
+              {
+                "id": "verdaccio",
+                "path": "/packages/js/executors/verdaccio",
+                "name": "verdaccio",
+                "children": [],
+                "isExternal": false,
+                "disableCollapsible": false
               }
             ],
             "isExternal": false,

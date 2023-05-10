@@ -200,6 +200,13 @@ function addProject(
         command: `node ${publishScriptPath} ${options.name} {args.ver} {args.tag}`,
         dependsOn: ['build'],
       };
+
+      projectConfiguration.targets['local-registry'] = {
+        executor: '@nx/js:',
+        options: {
+          port: 4873,
+        },
+      };
     }
   }
 

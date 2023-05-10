@@ -28,6 +28,11 @@
         "type": "string",
         "description": "Customize the generated tsconfig file name.",
         "x-priority": "internal"
+      },
+      "publishable": {
+        "type": "boolean",
+        "default": false,
+        "description": "Generate a publishable library."
       }
     },
     "presets": []

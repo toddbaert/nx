@@ -16,10 +16,9 @@ import {
   nxVersion,
   prettierVersion,
   typescriptVersion,
+  verdaccioVersion,
 } from '../../utils/versions';
 import { InitSchema } from './schema';
-
-let formatTaskAdded = false;
 
 export async function initGenerator(
   tree: Tree,
@@ -39,6 +38,10 @@ export async function initGenerator(
 
   if (!schema.js) {
     devDependencies['typescript'] = typescriptVersion;
+  }
+
+  if (schema.publishable) {
+    devDependencies['verdaccio'] = verdaccioVersion;
   }
 
   if (!tree.exists(`.prettierrc`)) {

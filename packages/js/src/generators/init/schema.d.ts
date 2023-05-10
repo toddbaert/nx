@@ -3,4 +3,5 @@ export interface InitSchema {
   skipFormat?: boolean;
   skipPackageJson?: boolean;
   tsConfigName?: string;
+  publishable?: boolean;
 }

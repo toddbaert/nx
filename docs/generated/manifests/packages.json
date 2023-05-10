@@ -1002,6 +1002,15 @@
         "originalFilePath": "/packages/js/src/executors/node/schema.json",
         "path": "/packages/js/executors/node",
         "type": "executor"
+      },
+      "/packages/js/executors/verdaccio": {
+        "description": "Start local registry with verdaccio",
+        "file": "generated/packages/js/executors/verdaccio.json",
+        "hidden": false,
+        "name": "verdaccio",
+        "originalFilePath": "/packages/js/src/executors/verdaccio/schema.json",
+        "path": "/packages/js/executors/verdaccio",
+        "type": "executor"
       }
     },
     "generators": {
